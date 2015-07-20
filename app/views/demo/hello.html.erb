@@ -1,3 +1,16 @@
 <h1>Hello</h1>
 
 <p>Hello from the hello page!</p>
+<%= number_to_currency(45000)%><br/>
+<%= Time.now + 30.days - 23.minutes %><br/>
+<%= 30.days.from_now - 23.minutes %><br/>
+<%= Time.now.last_year.end_of_month.beginning_of_day %>
+
+<h2>RUBY TIME METHODS</h2>
+<%= Time.now.strftime("%B %d %a, %Y %I:%M %p")%><br/>
+:db - <%= Time.now.to_s(:db) %><br/>
+:number - <%= Time.now.to_s(:number) %><br/>
+:time - <%= Time.now.to_s(:time) %><br/>
+:short - <%= Time.now.to_s(:short) %><br/>
+:long - <%= Time.now.to_s(:long) %><br/>
+:long_ordinal - <%= Time.now.to_s(:long_ordinal) %><br/>
