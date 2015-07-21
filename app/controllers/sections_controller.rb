@@ -12,7 +12,7 @@ class SectionsController < ApplicationController
 
   def new
     @section = Section.new({:name=>"Section Name"})
-    @pages = Page.all
+    @pages = Page.order('position ASC')
     @section_count = Section.count + 1
   end
 
