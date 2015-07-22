@@ -1,5 +1,6 @@
 class SubjectsController < ApplicationController
   layout "admin"
+  before_action :confirm_logged_in
   # index and show are from the READ part of CRUD
   def index
     @subjects = Subject.sorted
